@@ -1,8 +1,7 @@
 # Emotion Detector – AI Web Application
 
 ## Descripción
-Este proyecto implementa una aplicación web de detección de emociones utilizando Python y la biblioteca Watson NLP.  
-La aplicación analiza texto ingresado por el usuario y devuelve las emociones detectadas, junto con la emoción dominante.
+Este proyecto implementa una aplicación web de detección de emociones utilizando Python y la biblioteca Watson NLP, la aplicación analiza texto ingresado por el usuario y devuelve las emociones detectadas, junto con la emoción dominante.
 
 El sistema fue desarrollado como parte del proyecto final del curso de desarrollo con Python.
 
@@ -29,3 +28,13 @@ El sistema fue desarrollado como parte del proyecto final del curso de desarroll
 - Análisis de calidad de código con PyLint.
 
 ## Estructura del proyecto
+EmotionDetection/
+│
+├── init.py
+├── emotion_detection.py
+│
+tests/
+├── test_emotion_detection.py
+│
+server.py
+README.md
