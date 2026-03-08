@@ -1,40 +1,28 @@
-# Emotion Detector – AI Web Application
+# Final Project
 
-## Descripción
-Este proyecto implementa una aplicación web de detección de emociones utilizando Python y la biblioteca Watson NLP, la aplicación analiza texto ingresado por el usuario y devuelve las emociones detectadas, junto con la emoción dominante.
+## Emotion Detection Web Application
 
-El sistema fue desarrollado como parte del proyecto final del curso de desarrollo con Python.
+This project is a web-based emotion detection application built using Watson NLP. The application can detect the following emotions from text input:
 
-## Tecnologías utilizadas
-- Python
+- Anger
+- Disgust
+- Fear
+- Joy
+- Sadness
+
+It also identifies the **dominant emotion**.
+
+### Technologies Used
+- Python 3.x
 - Flask
-- Watson NLP API
 - Requests
-- PyLint
-- Unittest
+- Watson NLP API
 
-## Funcionalidades
-- Analiza texto para detectar emociones.
-- Devuelve valores de:
-  - anger
-  - disgust
-  - fear
-  - joy
-  - sadness
-- Identifica la emoción dominante.
-- Interfaz web mediante Flask.
-- Manejo de errores cuando el usuario no introduce texto.
-- Pruebas unitarias incluidas.
-- Análisis de calidad de código con PyLint.
+### Usage
+Import the `emotion_detector` function from the package and call it with text input:
 
-## Estructura del proyecto
-EmotionDetection/
-│
-├── init.py
-├── emotion_detection.py
-│
-tests/
-├── test_emotion_detection.py
-│
-server.py
-README.md
+```python
+from EmotionDetection.emotion_detection import emotion_detector
+
+result = emotion_detector("I am happy")
+print(result)
